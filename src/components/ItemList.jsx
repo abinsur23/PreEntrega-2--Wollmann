@@ -4,12 +4,19 @@ import Item from './Item';
 const ItemList = ({ data }) => {
   return (
     <div>
+        <div>
       {data.map((product) => (
-        <Item
-          product={product}
-          key={product.id}
-        />
-      ))}
+            <Item
+                item={product}
+                title={product.title}
+                key={product.id}
+                id={product.id}
+                image={product.image}
+                precio={product.precio}
+                origen={product.origen}
+            />
+            ))}
+        </div>
     </div>
   );
 };
