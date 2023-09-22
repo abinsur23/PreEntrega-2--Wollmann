@@ -10,3 +10,78 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Navbar.css */
+.navbar {
+  background-color: #fff; /* Fondo blanco */
+  color: #333; /* Color del texto */
+  padding: 10px 0; /* Espaciado interno */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.logo {
+  width: 90px; /* Tamaño del logo */
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  margin-right: 20px; /* Espacio entre los enlaces */
+}
+
+/* Item.css */
+
+.item-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: calc(50% - 20px); /* Dos elementos por fila con espacio de 20px entre ellos */
+  /* Ajusta el ancho y otros estilos según tu diseño */
+  display: inline-block;
+  vertical-align: top; /* Alinea los elementos en la parte superior */
+}
+
+.item-image {
+  max-width: 150px; /* Limitar el ancho de las imágenes a 150px */
+  height: auto;
+}
+
+.item-link {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.item-link:hover {
+  background-color: #333;
+}
