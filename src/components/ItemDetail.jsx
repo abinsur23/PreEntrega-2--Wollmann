@@ -14,11 +14,11 @@ const ItemDetail = ({ item }) => {
 
   return (
     <div>
-      <h1>{item.title}</h1>
+      <h1>{item.name}</h1>
       <img src={item.image} width={250} alt="" />
       <h3>Origen: {item.origen}</h3>
       <h4>Descripción:</h4>
-      <h4>Precio: {item.precio}</h4>
+      <h4>Precio: {item.price}</h4>
       <p>{item.description}</p>
       <ItemCount stock={item.stock} initial={1} onAdd={handleOnAdd} />
     </div>

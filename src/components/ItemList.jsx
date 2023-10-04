@@ -7,11 +7,11 @@ const ItemList = ({ data }) => {
     <div className="item-list-container">
       {data.map((product) => (
         <Item
-          title={product.title}
+          name={product.name}
           key={product.id}
           id={product.id}
           image={product.image}
-          precio={product.precio}
+          price={product.price}
           origen={product.origen}
         />
       ))}
