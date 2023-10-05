@@ -3,40 +3,40 @@
         "id": 1,
         "name": "Jack Daniels",
         "origen" : "Estados Unidos",
-        "stock" : "10",
+        "stock" : 10,
         "description": "Jack Daniels: Whisky estadounidense suave con notas de caramelo y vainilla, un clásico de Tennessee.",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9g7lw-dFIgwumyQ9Pz0ykaTeAY_hdkCRzb1cYS7YLpGmB8PQ1sr5wSdYWh1gr2oEOVz8&usqp=CAU",
-        "price": "13.00 Usd"
+        "price": 15000
     },
 
     {
         "id": 2,
         "name": "Makers Mark",
         "origen" : "Estados Unidos",
-        "stock" : "10",
+        "stock" : 10,
         "description": "Makers Mark: Whisky de EE. UU. con sabores suaves a caramelo y roble, reconocido por su botella sellada a mano.",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrqYs1IMs7IIWAsI-9wGTAiAIFbS6OUHcPgai8_1T5o-eogJMxZGqPkWBxJVK6-YOVxXY&usqp=CAU",
-        "price": "13.00 Usd"
+        "price": 14500
     },
 
     {
         "id": 3,
         "name": "Grand Old Parr De Luxe",
         "origen" : "Escocia",
-        "stock" : "6",
+        "stock" : 6,
         "description": "Grand Old Parr De Luxe: Whisky escocés elegante y ahumado con toques frutales y especiados.",
         "image": "https://http2.mlstatic.com/D_NQ_NP_795330-MLA69907159322_062023-O.webp",
-        "price": "10.50 Usd"
+        "price": 12000
     },
 
     {
         "id": 4,
         "name": "Hibiki",
         "origen" : "Japon",
-        "stock" : "4",
+        "stock" : 4,
         "description": "Hibiki: Whisky japonés suave con notas especiadas y ahumadas, una obra maestra de la destilería japonesa.",
         "image": "https://ilovebilbao.com/wp-content/uploads/2020/05/Captura-de-pantalla-2020-05-25-a-las-12.54.15.png",
-        "price": "30.00 Usd"
+        "price": 30000
     }
 
 ]

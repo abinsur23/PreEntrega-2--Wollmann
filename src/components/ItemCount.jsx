@@ -16,8 +16,9 @@ const ItemCount = ({ stock, initial, onAdd, item }) => {
   };
 
   const handleAddToCart = () => {
-    onAdd({ ...item, cant: count });
-  };
+    onAdd(count);
+};
+
 
   return (
     <div>

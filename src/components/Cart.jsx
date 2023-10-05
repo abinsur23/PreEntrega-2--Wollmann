@@ -13,13 +13,13 @@ const Cart = () => {
     <hr />
     {      cart.length !== 0 ?
         (
-          <div className=''>
-            <div className=''>
+          <div>
+            <div>
               {cart.map((e) => <CartItem key={e.id} item={e} />)}
               <br/>
               {`Total:  $ ${getTotal()}`}
               <br/>
-              <button className="btn btn-danger" onClick={clear}>Vaciar Carrito</button>
+              <button onClick={clear}>Vaciar Carrito</button>
               <br />
               <br />
                 
