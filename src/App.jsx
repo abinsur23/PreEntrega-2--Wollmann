@@ -7,7 +7,7 @@ import Navbar from './components/NavBar';
 
 import CartProvider from './components/CartContext';
 import Cart from './components/Cart';
-// import Checkout from './components/Checkout';
+import Checkout from './components/Checkout';
 
 
 
@@ -25,7 +25,7 @@ function App() {
             <Route path="/item/:id" element={<ItemDetailContainer />} />
             <Route path="/origen/:origenId" element={<ItemListContainer />} />
             <Route path="/cart" element={<Cart />} />
-            {/* <Route path="/checkout" element={<Checkout />} /> */}
+            <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </BrowserRouter>
       </CartProvider>
