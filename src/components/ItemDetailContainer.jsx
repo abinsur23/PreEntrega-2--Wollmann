@@ -1,36 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
-import productosJson from './productos.json';
+import { doc, getDoc } from "firebase/firestore";
+import { db } from '../main';
 
 const ItemDetailContainer = () => {
-
+    const [selectedItem, setSelectedItem] = useState();
     const { id } = useParams();
-    const [selectedItem, setSelectedItem] = useState()
-    
-    const getProductById = (id) => {
-        return new Promise(resolve => {
-            setTimeout(() => {
-                resolve(productosJson.find(prod => prod.id === parseInt(id)))
-            }, 1000)
-        })
-    }
 
     useEffect(() => {
-        getProductById(id)
-            .then(productos => {
-                setSelectedItem(productos)
-            })
-            .catch(err =>
-                console.warn(err)
-            )
-    }, [id])
-
+        if (id !== undefined) {
+            const docRef = doc(db, "productos", id);
+            getDoc(docRef)
+                .then((resp) => {
+                    setSelectedItem({ ...resp.data(), id: resp.id });
+                });
+        }
+    }, [id]);
 
     return (
         <ItemDetail item={selectedItem} />
-    )
+    );
 }
 
 export default ItemDetailContainer;
-
